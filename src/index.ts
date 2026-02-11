@@ -251,7 +251,7 @@ app.onError((err, c) => {
 // Start server
 const port = parseInt(process.env.PORT || '3000', 10);
 
-console.log(\`🚀 json-transform v\${VERSION} running on port \${port}\`);
+console.log(`🚀 json-transform v${VERSION} running on port ${port}`);
 
 // Graceful shutdown
 process.on('SIGTERM', () => {
