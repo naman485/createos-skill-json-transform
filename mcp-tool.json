@@ -1,0 +1,51 @@
+{
+  "name": "json_transform",
+  "description": "Convert data between JSON, CSV, XML, YAML, and TOML formats. Also supports flattening nested objects, querying with JMESPath, comparing JSON objects (diff), and validating against JSON Schema.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "enum": ["transform", "flatten", "unflatten", "query", "diff", "validate"],
+        "description": "The operation to perform: transform (convert formats), flatten (nested to dot-notation), unflatten (dot-notation to nested), query (JMESPath), diff (compare objects), validate (JSON Schema)"
+      },
+      "input": {
+        "type": "string",
+        "enum": ["json", "csv", "xml", "yaml", "toml"],
+        "description": "Input format (required for transform action)"
+      },
+      "output": {
+        "type": "string",
+        "enum": ["json", "csv", "xml", "yaml", "toml"],
+        "description": "Output format (required for transform action)"
+      },
+      "data": {
+        "description": "The data to process — object, array, or string depending on input format and action"
+      },
+      "query": {
+        "type": "string",
+        "description": "JMESPath query expression (for query action)"
+      },
+      "original": {
+        "description": "Original object for comparison (for diff action)"
+      },
+      "modified": {
+        "description": "Modified object for comparison (for diff action)"
+      },
+      "schema": {
+        "type": "object",
+        "description": "JSON Schema to validate against (for validate action)"
+      },
+      "options": {
+        "type": "object",
+        "description": "Optional settings: pretty (bool), delimiter (string), headers (bool), rootElement (string), indent (number)"
+      }
+    },
+    "required": ["action"]
+  },
+  "endpoint": "POST /api/{action}",
+  "pricing": {
+    "credits": 1,
+    "usd": 0.01
+  }
+}
