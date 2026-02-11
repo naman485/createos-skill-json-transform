@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "bun run src/index.ts",
+    "build": "echo 'No build step required - Bun runs TypeScript directly'",
     "dev": "bun --watch run src/index.ts",
     "test": "bun test"
   },
