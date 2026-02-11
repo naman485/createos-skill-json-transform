@@ -9,7 +9,7 @@ import validateRoute from './routes/validate.js';
 
 const app = new Hono();
 const startTime = Date.now();
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 // CORS middleware
 app.use('*', cors({

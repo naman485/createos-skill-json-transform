@@ -1,6 +1,6 @@
 {
   "name": "createos-skill-json-transform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert JSON to CSV, XML, YAML, TOML, and back — in one API call.",
   "type": "module",
   "scripts": {
