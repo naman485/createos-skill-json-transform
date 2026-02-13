@@ -2,10 +2,21 @@
 
 > Convert JSON to CSV, XML, YAML, TOML, and back — in one API call.
 
+**Live API**: https://production-json-transform.tyzo.nodeops.app
+
+## Quick Links
+
+| Resource | URL |
+|----------|-----|
+| Interactive Demo | https://production-json-transform.tyzo.nodeops.app/demo |
+| API Documentation | https://production-json-transform.tyzo.nodeops.app/docs |
+| Health Check | https://production-json-transform.tyzo.nodeops.app/health |
+| MCP Tool Definition | https://production-json-transform.tyzo.nodeops.app/mcp-tool.json |
+
 ## Try It
 
 ```bash
-curl -X POST https://json-transform.nodeops.app/api/transform \
+curl -X POST https://production-json-transform.tyzo.nodeops.app/api/transform \
   -H "Content-Type: application/json" \
   -d '{
     "input": "json",
@@ -202,7 +213,7 @@ This Skill is auto-discoverable by AI agents via MCP:
 
 ```bash
 # Fetch tool definition:
-curl https://json-transform.nodeops.app/mcp-tool.json
+curl https://production-json-transform.tyzo.nodeops.app/mcp-tool.json
 ```
 
 ## Deploy Your Own
@@ -220,8 +231,8 @@ npx createos deploy
 ```
 
 ## Tech Stack
+
 - Bun 1.3 + Hono
 - js-yaml, fast-xml-parser, smol-toml
 - jmespath, ajv, deep-diff
 - Deployed on [CreateOS](https://createos.nodeops.network)
-# Trigger rebuild

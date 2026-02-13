@@ -126,7 +126,7 @@ app.get('/docs', (c) => {
   <div class="endpoint">
     <h3><span class="method post">POST</span> /api/transform</h3>
     <p>Convert data between formats.</p>
-    <pre><code>curl -X POST https://json-transform.nodeops.app/api/transform \\
+    <pre><code>curl -X POST https://production-json-transform.tyzo.nodeops.app/api/transform \\
   -H "Content-Type: application/json" \\
   -d '{
     "input": "json",
@@ -138,7 +138,7 @@ app.get('/docs', (c) => {
   <div class="endpoint">
     <h3><span class="method post">POST</span> /api/flatten</h3>
     <p>Flatten nested JSON into dot-notation keys.</p>
-    <pre><code>curl -X POST https://json-transform.nodeops.app/api/flatten \\
+    <pre><code>curl -X POST https://production-json-transform.tyzo.nodeops.app/api/flatten \\
   -H "Content-Type: application/json" \\
   -d '{
     "data": {"user": {"name": {"first": "NK"}}},
@@ -149,7 +149,7 @@ app.get('/docs', (c) => {
   <div class="endpoint">
     <h3><span class="method post">POST</span> /api/unflatten</h3>
     <p>Expand dot-notation keys back into nested objects.</p>
-    <pre><code>curl -X POST https://json-transform.nodeops.app/api/unflatten \\
+    <pre><code>curl -X POST https://production-json-transform.tyzo.nodeops.app/api/unflatten \\
   -H "Content-Type: application/json" \\
   -d '{
     "data": {"user.name.first": "NK"},
@@ -160,7 +160,7 @@ app.get('/docs', (c) => {
   <div class="endpoint">
     <h3><span class="method post">POST</span> /api/query</h3>
     <p>Query JSON data using JMESPath expressions.</p>
-    <pre><code>curl -X POST https://json-transform.nodeops.app/api/query \\
+    <pre><code>curl -X POST https://production-json-transform.tyzo.nodeops.app/api/query \\
   -H "Content-Type: application/json" \\
   -d '{
     "data": {"users": [{"name": "NK", "role": "admin"}, {"name": "Bob", "role": "user"}]},
@@ -171,7 +171,7 @@ app.get('/docs', (c) => {
   <div class="endpoint">
     <h3><span class="method post">POST</span> /api/diff</h3>
     <p>Compare two JSON objects and return differences.</p>
-    <pre><code>curl -X POST https://json-transform.nodeops.app/api/diff \\
+    <pre><code>curl -X POST https://production-json-transform.tyzo.nodeops.app/api/diff \\
   -H "Content-Type: application/json" \\
   -d '{
     "original": {"name": "NK", "age": 25},
@@ -182,7 +182,7 @@ app.get('/docs', (c) => {
   <div class="endpoint">
     <h3><span class="method post">POST</span> /api/validate</h3>
     <p>Validate JSON data against a JSON Schema.</p>
-    <pre><code>curl -X POST https://json-transform.nodeops.app/api/validate \\
+    <pre><code>curl -X POST https://production-json-transform.tyzo.nodeops.app/api/validate \\
   -H "Content-Type: application/json" \\
   -d '{
     "data": {"name": "NK", "email": "nk@example.com"},
