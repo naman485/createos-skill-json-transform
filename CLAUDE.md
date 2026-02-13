@@ -20,7 +20,6 @@ This is a CreateOS Skill — a monetized API microservice deployed on CreateOS p
 
 **Live URL**: https://production-json-transform.tyzo.nodeops.app
 **Demo**: https://production-json-transform.tyzo.nodeops.app/demo
-**Pricing**: 1 credit ($0.01) per request
 
 ## Architecture
 

@@ -38,7 +38,6 @@ app.get('/', (c) => {
     name: 'json-transform',
     version: VERSION,
     description: 'Convert JSON to CSV, XML, YAML, TOML, and back — in one API call.',
-    pricing: { credits: 1, usd: '$0.01' },
     endpoints: [
       { method: 'POST', path: '/api/transform', description: 'Convert data between formats (JSON, CSV, XML, YAML, TOML)' },
       { method: 'POST', path: '/api/flatten', description: 'Flatten nested JSON into dot-notation keys' },
@@ -83,8 +82,7 @@ app.get('/mcp-tool.json', (c) => {
       },
       required: ['action']
     },
-    endpoint: 'POST /api/{action}',
-    pricing: { credits: 1, usd: 0.01 }
+    endpoint: 'POST /api/{action}'
   });
 });
 
@@ -119,7 +117,6 @@ app.get('/docs', (c) => {
 <body>
   <h1>JSON Transform API</h1>
   <p>Convert JSON to CSV, XML, YAML, TOML, and back — in one API call.</p>
-  <p><span class="badge">1 credit</span> per request ($0.01)</p>
 
   <h2>Endpoints</h2>
 
@@ -452,7 +449,6 @@ app.get('/demo', (c) => {
     <header>
       <h1>JSON Transform</h1>
       <p class="subtitle">Convert JSON to CSV, XML, YAML, TOML and back — in one API call</p>
-      <span class="badge">1 credit per request ($0.01)</span>
       <div class="nav-links">
         <a href="/docs">API Docs</a>
         <a href="/mcp-tool.json">MCP Tool</a>

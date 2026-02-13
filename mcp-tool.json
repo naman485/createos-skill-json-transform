@@ -43,9 +43,5 @@
     },
     "required": ["action"]
   },
-  "endpoint": "POST /api/{action}",
-  "pricing": {
-    "credits": 1,
-    "usd": 0.01
-  }
+  "endpoint": "POST /api/{action}"
 }

@@ -199,14 +199,6 @@ Validate JSON data against a JSON Schema.
 | QUERY_ERROR | Invalid JMESPath query |
 | VALIDATION_ERROR | Schema validation failed |
 
-## Pricing
-
-| Tier | Credits | USD |
-|------|---------|-----|
-| Per request | 1 | $0.01 |
-
-> At 100 requests/day, this Skill earns **$24/month** for the publisher (80% split).
-
 ## MCP Integration (AI Agents)
 
 This Skill is auto-discoverable by AI agents via MCP:
